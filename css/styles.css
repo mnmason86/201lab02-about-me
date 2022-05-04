@@ -3,10 +3,11 @@ body{
 }
 
 header, footer{
-  padding-top: 0;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 0; 
+  padding-bottom: 20px; 
+  text-align: center;
 }
 
 main {
@@ -26,6 +27,7 @@ p{
 
 h1{
   font-size: 2rem;
+ 
 }
 
 h2{
@@ -39,7 +41,6 @@ h1,h2{
 }
 
 footer{
-  text-align: center;
   font-size: smaller;
 }
 
