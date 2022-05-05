@@ -69,3 +69,9 @@ li{
   padding-top: 5px;
   padding-bottom:5px;
 }
+iframe{
+  display: block;
+  margin: 25px auto;
+  border: 5px dotted black;
+  padding: 5px;
+}
