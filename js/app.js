@@ -21,7 +21,7 @@ if (questionTwo.toLowerCase() === 'no' || questionTwo.toLowerCase() === 'n') {
   //console.log(questionTwo);
 }
 else {
-  alert('Incorrect. Mandy does not have a cat named Gizmo.');
+  alert('Incorrect. Mandy does not have a cat named Gremlin.');
 }
 
 let questionThree = prompt('Yes or No. Mandy is a music teacher.');
