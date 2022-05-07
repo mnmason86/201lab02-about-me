@@ -54,3 +54,24 @@ else {
   alert('Incorrect, ' + userName + '. One of Mandy\'s goals is to build a solid network of tech professionals.');
 }
 
+let questionSix = prompt('Guess a whole number between 1 and 10.');
+let correctNumber = 4;
+let attempts = 4;
+
+for (let i=1; i<attempts; i++){
+  while(questionSix < 1 || questionSix > 10){
+    questionSix = prompt('Try again, a whole number between 1 and 10!');
+  }
+  if(questionSix === correctNumber){
+    alert('Correct!');
+    break;
+  } else if (questionSix > correctNumber){
+    questionSix = prompt('Too high, try again.');
+  } else if (questionSix < correctNumber){
+    questionSix = prompt('Too low, try again.');
+  }
+  if(i === 3){
+    alert('The correct answer was 4!');
+  }
+}
+
