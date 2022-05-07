@@ -88,3 +88,8 @@ iframe{
   border: 5px dotted black;
   padding: 5px;
 }
+
+#topten {
+  font-weight: normal;
+  padding-bottom: 10px;
+}
