@@ -53,3 +53,5 @@ if (questionFive.toLowerCase() === 'yes' || questionFive.toLowerCase() === 'y') 
 else {
   alert('Incorrect, ' + userName + '. One of Mandy\'s goals is to build a solid network of tech professionals.');
 }
+
+ 

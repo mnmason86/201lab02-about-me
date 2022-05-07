@@ -69,6 +69,19 @@ li{
   padding-top: 5px;
   padding-bottom:5px;
 }
+
+ol{
+  list-style:decimal;
+  font-weight: bold;
+}
+
+ol ol {
+  list-style: upper-roman;
+  margin-left: 25px;
+  font-weight: normal;
+  
+}
+
 iframe{
   display: block;
   margin: 25px auto;
