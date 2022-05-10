@@ -8,9 +8,8 @@ console.log(userName);
 let questionOne = prompt('Yes or No. Mandy was born in Tallahassee, Florida.');
 
 if (questionOne.toLowerCase() === 'no' || questionOne.toLowerCase() === 'n') {
-  alert('Correct! Mandy was born in Nashville. +1 Point!');
   userPoints++;
-  alert('You have ' + userPoints + ' points.');
+  alert('Correct! Mandy was born in Nashville. +1 Point! You have ' + userPoints + ' points.');
   //console.log(questionOne);
 }
 else {
@@ -20,9 +19,8 @@ else {
 let questionTwo = prompt('Yes or No. Mandy has a cat named Gremlin.');
 
 if (questionTwo.toLowerCase() === 'no' || questionTwo.toLowerCase() === 'n') {
-  alert('Correct! Mandy has a cat named Gizmo. +1 Point!');
   userPoints++;
-  alert('You have ' + userPoints + ' points.');
+  alert('Correct! Mandy has a cat named Gizmo. +1 Point! You have ' + userPoints + ' points.');
   //console.log(questionTwo);
 }
 else {
@@ -32,9 +30,8 @@ else {
 let questionThree = prompt('Yes or No. Mandy is a music teacher.');
 
 if (questionThree.toLowerCase() === 'yes' || questionThree.toLowerCase() === 'y') {
-  alert('Correct! Mandy teaches music to K-5 students. +1 Point!');
   userPoints++;
-  alert('You have ' + userPoints + ' points.');
+  alert('Correct! Mandy teaches music to K-5 students. +1 Point! You have ' + userPoints + ' points.');
   //console.log(questionThree);
 }
 else {
@@ -44,9 +41,8 @@ else {
 let questionFour = prompt('Yes or No. Mandy has worked at Waffle House.');
 
 if (questionFour.toLowerCase() === 'yes' || questionFour.toLowerCase() === 'y') {
-  alert('Correct! Mandy has worked at Waffle House. +1 Point!');
   userPoints++;
-  alert('You have ' + userPoints + ' points.');
+  alert('Correct! Mandy has worked at Waffle House. +1 Point! You have ' + userPoints + ' points.');
   //console.log(questionFour);
 }
 else {
@@ -56,9 +52,8 @@ else {
 let questionFive = prompt('Yes or No. One of Mandy\'s goals is to "Build a solid network of tech professionals."');
 
 if (questionFive.toLowerCase() === 'yes' || questionFive.toLowerCase() === 'y') {
-  alert('Correct, ' + userName + '. Mandy wants to build a solid network of tech professionals. +1 Point!');
   userPoints++;
-  alert('You have ' + userPoints + ' points.');
+  alert('Correct, ' + userName + '. Mandy wants to build a solid network of tech professionals. +1 Point! You have ' + userPoints + ' points.');
   //console.log(questionFive);
 }
 else {
@@ -70,7 +65,7 @@ let userAnswer = prompt('Enter a number 1-10');
 let correctAnswer = 7;
 let attempts = 5;
 
-for (let i = 1; i < attempts; i++){
+for (let i = 0; i < attempts; i++){
   while(userAnswer <1 || userAnswer >10){
     userAnswer = prompt('Please Try Again! A number 1-10!');
   }
