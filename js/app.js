@@ -65,47 +65,49 @@ else {
   alert('Incorrect, ' + userName + '. One of Mandy\'s goals is to build a solid network of tech professionals.');
 }
 
-function guessNumber () {
-  let userAnswer = prompt('Enter a number 1-10');
-  let correctAnswer = 7;
-  let attempts = 5;
 
-  for (let i = 1; i < attempts; i++){
-    while(userAnswer <1 || userAnswer >10){
-      userAnswer = prompt('Please Try Again! A number 1-10!')
-    }
-    if (userAnswer == correctAnswer) {
-      alert ('CORRECT! Proceed.');
-      userPoints++;
-      alert('You have ' + userPoints + ' points.');
-      break;
-    } else if (userAnswer > correctAnswer) {
-      userAnswer = prompt('Too High. Please Try Again! A number 1-10!');
-    } else if (userAnswer < correctAnswer) {
-      userAnswer = prompt('Too Low. Please Try Again! A number 1-10!');
-    }
-    if(i == 4){
-      alert('The Correct Answer Was 7.');
-    }
+let userAnswer = prompt('Enter a number 1-10');
+let correctAnswer = 7;
+let attempts = 5;
+
+for (let i = 1; i < attempts; i++){
+  while(userAnswer <1 || userAnswer >10){
+    userAnswer = prompt('Please Try Again! A number 1-10!');
+  }
+  if (userAnswer == correctAnswer) {
+    userPoints++;
+    alert ('Correct! +1 point. You have ' + userPoints + ' points.');
+    break;
+  } else if (userAnswer > correctAnswer) {
+    userAnswer = prompt('Too High. Please Try Again! A number 1-10!');
+  } else if (userAnswer < correctAnswer) {
+    userAnswer = prompt('Too Low. Please Try Again! A number 1-10!');
+  } else if(i == 3){
+    alert('The Correct Answer Was 7.');
   }
 }
 
-guessNumber();
 
-let activityGuess = prompt('What is one of Mandy\'s top six favorite recreational activities?');
-const activities = ['Dungeons & Dragons', 'Reading', 'Playing Board & Card Games', 'Self Care', 'Going to the Beach', 'Video Games'];
 
-for (let i = 1; i < activities.length; i++){
-  if(activities.includes(activityGuess)){
-    alert('Correct! +1 Point!');
-    userPoints++;
-    alert('You have ' + userPoints + ' points.');
-    break;
-  } else if (!activities.includes(activityGuess)){
-    activityGuess = prompt('Incorrect, try again!');
-  } if (i === 5) {
-    alert('Those are not Mandy\'s favorite activities.');
+let attemptsRemain = 6;
+let activities = ['Dungeons & Dragons', 'Reading', 'Playing Board & Card Games', 'Self Care', 'Going to the Beach', 'Video Games'];
+let answeredCorrectly = false;
+
+while(attemptsRemain && !answeredCorrectly){
+
+  let response = prompt (`What is one of Mandy's top six favorite activities? You have ${attemptsRemain} attempts.`).toLowerCase();
+
+  for(let i = 0 ; i < activities.length; i++) {
+
+    let activity = activities[i].toLowerCase();
+    //console.log(response, activity, response === activity);
+    if(response === activity){
+      userPoints++;
+      alert('That is correct! +1 point! You have ' + userPoints + ' points!');
+      answeredCorrectly = true;
+    }
   }
+  attemptsRemain--;
 }
 
 
