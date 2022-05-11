@@ -98,7 +98,7 @@ while(attemptsRemain && !answeredCorrectly){
     //console.log(response, activity, response === activity);
     if(response === activity){
       userPoints++;
-      alert('That is correct! +1 point! You have ' + userPoints + ' points!');
+      alert('That is correct! +1 point! You have ' + userPoints + ' points! Possible correct answers - Dungeons & Dragons, Reading, Playing Board & Card Games, Self Care, Going to the Beach, and Video Games.');
       answeredCorrectly = true;
     }
   }
