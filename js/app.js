@@ -1,42 +1,56 @@
 'use strict';
 let userPoints = 0;
 
-let userName = prompt('What is your name?');
-alert ('Welcome to my About Me page, ' + userName + '.');
-console.log(userName);
+// let userName = prompt('What is your name?');
+// alert ('Welcome to my About Me page, ' + userName + '.');
+// console.log(userName);
 
-let questionOne = prompt('Yes or No. Mandy was born in Tallahassee, Florida.');
+let answerOne = prompt('Yes or No. Mandy was born in Tallahassee, Florida.');
 
-if (questionOne.toLowerCase() === 'no' || questionOne.toLowerCase() === 'n') {
-  userPoints++;
-  alert('Correct! Mandy was born in Nashville. +1 Point! You have ' + userPoints + ' points.');
-  //console.log(questionOne);
+function questionOne(userGuess){
+  userGuess = userGuess.toLowerCase();
+  
+  if (userGuess == 'no'|| userGuess == 'n'){
+   userPoints++;
+    alert('Correct! Mandy was born in Nashville. +1 Point! You have ' + userPoints + ' points.');
+  }else if (userGuess !== 'no'|| userGuess !== 'n' ){
+    alert('Incorrect. Mandy was not born in Tallahassee.');
+  }
 }
-else {
-  alert('Incorrect. Mandy was not born in Tallahassee.');
-}
+questionOne(answerOne);
 
-let questionTwo = prompt('Yes or No. Mandy has a cat named Gremlin.');
+let answerTwo = prompt('Yes or No. Mandy has a cat named Gremlin.');
 
-if (questionTwo.toLowerCase() === 'no' || questionTwo.toLowerCase() === 'n') {
-  userPoints++;
-  alert('Correct! Mandy has a cat named Gizmo. +1 Point! You have ' + userPoints + ' points.');
-  //console.log(questionTwo);
+function questionTwo(userGuess){
+  userGuess = userGuess.toLowerCase();
+  
+  if (userGuess == 'no'|| userGuess == 'n'){
+   userPoints++;
+    alert('Correct! Mandy has a cat named Gizmo. +1 Point! You have ' + userPoints + ' points.');
+  }else if (userGuess !== 'no'|| userGuess !== 'n' ){
+    alert('Incorrect. Mandy does not have a cat named Gremlin.');
+  }
 }
-else {
-  alert('Incorrect. Mandy does not have a cat named Gremlin.');
-}
+questionTwo(answerTwo);
 
-let questionThree = prompt('Yes or No. Mandy is a music teacher.');
 
-if (questionThree.toLowerCase() === 'yes' || questionThree.toLowerCase() === 'y') {
-  userPoints++;
-  alert('Correct! Mandy teaches music to K-5 students. +1 Point! You have ' + userPoints + ' points.');
-  //console.log(questionThree);
+let answerThree = prompt('Yes or No. Mandy is a music teacher.');
+
+function questionThree(userGuess){
+  userGuess = userGuess.toLowerCase();
+  
+  if (userGuess == 'yes'|| userGuess == 'y'){
+   userPoints++;
+    alert('Correct! Mandy teaches music to K-5 students. +1 Point! You have ' + userPoints + ' points.');
+  }else if (userGuess !== 'yes'|| userGuess !== 'y' ){
+    alert('Incorrect. Mandy does teach music.');
+  }
 }
-else {
-  alert('Incorrect. Mandy does teach music.');
-}
+questionThree(answerThree);
+
+
+
+
 
 let questionFour = prompt('Yes or No. Mandy has worked at Waffle House.');
 
