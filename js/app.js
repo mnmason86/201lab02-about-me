@@ -5,16 +5,20 @@ let userName = prompt('What is your name?');
 alert ('Welcome to my About Me page, ' + userName + '.');
 console.log(userName);
 
-let questionOne = prompt('Yes or No. Mandy was born in Tallahassee, Florida.');
+let answerOne = prompt ('Yes or No. Mandy was born in Tallahassee, Florida.');
 
-if (questionOne.toLowerCase() === 'no' || questionOne.toLowerCase() === 'n') {
-  userPoints++;
-  alert('Correct! Mandy was born in Nashville. +1 Point! You have ' + userPoints + ' points.');
-  //console.log(questionOne);
+function questionOne(userGuess){
+
+  if (userGuess == 'no' || userGuess != 'no'){
+    userGuess = userGuess.toLowerCase();
+    userPoints++;
+    alert('Correct! Mandy was born in Nashville. +1 Point! You have ' + userPoints + ' points.');
+  } else if (userGuess !== 'no' || userGuess !== 'y'){
+    alert('Incorrect. Mandy was not born in Tallahassee.');
+  }
 }
-else {
-  alert('Incorrect. Mandy was not born in Tallahassee.');
-}
+questionOne(answerOne);
+
 
 let questionTwo = prompt('Yes or No. Mandy has a cat named Gremlin.');
 
