@@ -1,6 +1,6 @@
 body{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: beige;
+  background-color: rgb(57, 228, 234);
 }
 
 header, footer{
@@ -22,7 +22,7 @@ main {
 }
 
 header{ 
-  background-color: black;
+  background-color: rgb(243, 231, 124);
 }
 img{
   display: block;
@@ -37,14 +37,14 @@ p{
 
 h1{
   font-size: 2rem;
-  color: beige;
+  color: rgb(244, 132, 13);
  
 }
 
 h2{
   font-size: 1.5rem;
-  background-color: black;
-  color: beige;
+  background-color: rgb(243, 231, 124);
+  color: rgb(244, 132, 13);
 }
 
 h1,h2,h3{
@@ -52,6 +52,7 @@ h1,h2,h3{
   margin-top: 10px;
   margin-bottom: 5px;
   text-align: center;
+  padding: .5em;
 }
 
 footer{
@@ -85,7 +86,7 @@ ol ol {
 iframe{
   display: block;
   margin: 25px auto;
-  border: 5px dotted black;
+  border: 5px dotted rgb(243, 231, 124);
   padding: 5px;
 }
 
