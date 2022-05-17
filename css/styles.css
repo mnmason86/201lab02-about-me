@@ -1,6 +1,7 @@
 body{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(57, 228, 234);
+  color: rgb(28, 107, 121);
 }
 
 header, footer{
@@ -17,8 +18,11 @@ main {
   margin-left:auto;
   margin-right:auto;
   width: 700px;
-  border-top-style: dotted;
+  border-top-style:dotted;
   border-bottom-style: dotted;
+  border-top-color: rgb(28, 107, 121);
+  border-bottom-color: rgb(28, 107, 121);
+  font-size: 1.25em;
 }
 
 header{ 
@@ -30,23 +34,28 @@ img{
 }
 
 p{
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px auto;
+  line-height: 1.3em;
   
 }
 
 h1{
-  font-size: 2rem;
+  font-size: 3rem;
   color: rgb(244, 132, 13);
+  text-shadow: .5em;
  
 }
 
 h2{
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   background-color: rgb(243, 231, 124);
   color: rgb(244, 132, 13);
 }
 
+h3{
+  background-color: rgb(244, 132, 13);
+  color: rgb(243, 231, 124);
+}
 h1,h2,h3{
   font-weight:bold;
   margin-top: 10px;
@@ -74,6 +83,7 @@ li{
 ol{
   list-style:decimal;
   font-weight: bold;
+  
 }
 
 ol ol {
