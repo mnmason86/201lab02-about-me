@@ -7,6 +7,15 @@ console.log(userName);
 
 let answerOne = prompt ('Yes or No. Mandy was born in Tallahassee, Florida.');
 
+
+if (questionOne.toLowerCase() === 'no' || questionOne.toLowerCase() === 'n') {
+  userPoints++;
+  alert('Correct! Mandy was born in Nashville. +1 Point! You have ' + userPoints + ' points.');
+
+}
+else {
+  alert('Incorrect. Mandy was not born in Tallahassee.');
+
 function questionOne(userGuess){
 
   if (userGuess == 'no' || userGuess != 'no'){
@@ -16,6 +25,7 @@ function questionOne(userGuess){
   } else if (userGuess !== 'no' || userGuess !== 'y'){
     alert('Incorrect. Mandy was not born in Tallahassee.');
   }
+
 }
 questionOne(answerOne);
 
@@ -25,7 +35,7 @@ let questionTwo = prompt('Yes or No. Mandy has a cat named Gremlin.');
 if (questionTwo.toLowerCase() === 'no' || questionTwo.toLowerCase() === 'n') {
   userPoints++;
   alert('Correct! Mandy has a cat named Gizmo. +1 Point! You have ' + userPoints + ' points.');
-  //console.log(questionTwo);
+
 }
 else {
   alert('Incorrect. Mandy does not have a cat named Gremlin.');
@@ -36,7 +46,7 @@ let questionThree = prompt('Yes or No. Mandy is a music teacher.');
 if (questionThree.toLowerCase() === 'yes' || questionThree.toLowerCase() === 'y') {
   userPoints++;
   alert('Correct! Mandy teaches music to K-5 students. +1 Point! You have ' + userPoints + ' points.');
-  //console.log(questionThree);
+
 }
 else {
   alert('Incorrect. Mandy does teach music.');
@@ -47,7 +57,7 @@ let questionFour = prompt('Yes or No. Mandy has worked at Waffle House.');
 if (questionFour.toLowerCase() === 'yes' || questionFour.toLowerCase() === 'y') {
   userPoints++;
   alert('Correct! Mandy has worked at Waffle House. +1 Point! You have ' + userPoints + ' points.');
-  //console.log(questionFour);
+
 }
 else {
   alert('Incorrect. Mandy has worked at Waffle House.');
@@ -58,7 +68,7 @@ let questionFive = prompt('Yes or No. One of Mandy\'s goals is to "Build a solid
 if (questionFive.toLowerCase() === 'yes' || questionFive.toLowerCase() === 'y') {
   userPoints++;
   alert('Correct, ' + userName + '. Mandy wants to build a solid network of tech professionals. +1 Point! You have ' + userPoints + ' points.');
-  //console.log(questionFive);
+
 }
 else {
   alert('Incorrect, ' + userName + '. One of Mandy\'s goals is to build a solid network of tech professionals.');
@@ -99,7 +109,7 @@ while(attemptsRemain && !answeredCorrectly){
   for(let i = 0 ; i < activities.length; i++) {
 
     let activity = activities[i].toLowerCase();
-    //console.log(response, activity, response === activity);
+
     if(response === activity){
       userPoints++;
       alert('That is correct! +1 point! You have ' + userPoints + ' points! Possible correct answers - Dungeons & Dragons, Reading, Playing Board & Card Games, Self Care, Going to the Beach, and Video Games.');
